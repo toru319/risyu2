@@ -5,9 +5,10 @@ import SelectionPage from '../pages/SelectionPage';
 import TimeTablePage from '../pages/TimeTablePage';
 import EasyCoursesPage from '../pages/EasyCoursesPage';
 
+
 const Router = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/risyu2"> {/* basenameにリポジトリ名を設定 */}
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/selection" element={<SelectionPage />} />
