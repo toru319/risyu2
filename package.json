@@ -1,6 +1,7 @@
 {
   "name": "risyu",
   "private": true,
+  "homepage": "https://toru319.github.io/risyu2/", // リポジトリURLを指定
   "version": "0.0.0",
   "type": "module",
   "scripts": {
@@ -8,6 +9,8 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
